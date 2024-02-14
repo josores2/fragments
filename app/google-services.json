@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "869216334785",
+    "project_id": "fir-jsorli33",
+    "storage_bucket": "fir-jsorli33.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:869216334785:android:828b1944de5812d7313540",
+        "android_client_info": {
+          "package_name": "com.example.ejemplofragment"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXCvQEV9l9GbnnjEiNM2AEdpcBSGO20TA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:869216334785:android:423f90a9838901ad313540",
+        "android_client_info": {
+          "package_name": "com.example.firebasejsorli33"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXCvQEV9l9GbnnjEiNM2AEdpcBSGO20TA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
