@@ -6,9 +6,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import androidx.navigation.fragment.findNavController
 
 class PrimerFragmento : Fragment() {
-
+    /*
     private var name: String? = null
     private var address: String? = null
 
@@ -19,16 +21,21 @@ class PrimerFragmento : Fragment() {
             address = it.getString(ADDRESS_BUNDLE)
             Log.i("PEPITO: ",name.orEmpty())
         }
-    }
-
+    }*/
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_primer_fragmento, container, false)
-    }
+        val root = inflater.inflate(R.layout.fragment_primer_fragmento, container, false)
+        val btnNav = root.findViewById<Button>(R.id.btnFragmentClick)
 
+        btnNav.setOnClickListener {
+            //llamamos a la acción , no al fragment
+            findNavController().navigate(R.id.action_primerFragmento_to_segundoFragment)
+        }
+        return root
+
+        /*
     companion object {
 
         const val NAME_BUNDLE = "name_bundle"
@@ -43,5 +50,6 @@ class PrimerFragmento : Fragment() {
                     putString(ADDRESS_BUNDLE, address)
                 }
             }
+    }*/
     }
 }

@@ -9,12 +9,20 @@
         android:id="@+id/primerFragmento"
         android:name="com.example.ejemplofragment.PrimerFragmento"
         android:label="fragment_primer_fragmento"
-        tools:layout="@layout/fragment_primer_fragmento" />
+        tools:layout="@layout/fragment_primer_fragmento" >
+        <action
+            android:id="@+id/action_primerFragmento_to_segundoFragment"
+            app:destination="@id/segundoFragment" />
+    </fragment>
     <fragment
         android:id="@+id/segundoFragment"
         android:name="com.example.ejemplofragment.SegundoFragment"
         android:label="fragment_segundo"
-        tools:layout="@layout/fragment_segundo" />
+        tools:layout="@layout/fragment_segundo" >
+        <action
+            android:id="@+id/action_segundoFragment_to_tercerFragment"
+            app:destination="@id/tercerFragment" />
+    </fragment>
     <fragment
         android:id="@+id/tercerFragment"
         android:name="com.example.ejemplofragment.TercerFragment"
