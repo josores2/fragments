@@ -12,15 +12,27 @@
         tools:layout="@layout/fragment_primer_fragmento" >
         <action
             android:id="@+id/action_primerFragmento_to_segundoFragment"
-            app:destination="@id/segundoFragment" />
+            app:destination="@id/segundoFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
+        <argument
+            android:name="nombre"
+            app:argType="string"
+            app:nullable="true" />
     </fragment>
     <fragment
         android:id="@+id/segundoFragment"
         android:name="com.example.ejemplofragment.SegundoFragment"
         android:label="fragment_segundo"
         tools:layout="@layout/fragment_segundo" >
+        <argument
+            android:name="nombre"
+            app:argType="string"
+            app:nullable="true" />
         <action
             android:id="@+id/action_segundoFragment_to_tercerFragment"
+            app:destination="@id/tercerFragment" />
+        <action
+            android:id="@+id/action_segundoFragment_to_tercerFragment2"
             app:destination="@id/tercerFragment" />
     </fragment>
     <fragment
