@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/grafo_principal"
     app:startDestination="@id/primerFragmento">
+    <!-- Con startDestination indicamos el fragment inicio del grafo. La casita en la vista diseño -->
 
+    <!-- Declaración del primer fragment del Grafo, con sus action y argumentos (dentro del action)-->
     <fragment
         android:id="@+id/primerFragmento"
         android:name="com.example.ejemplofragment.PrimerFragmento"
@@ -14,30 +16,32 @@
             android:id="@+id/action_primerFragmento_to_segundoFragment"
             app:destination="@id/segundoFragment"
             app:enterAnim="@android:anim/slide_in_left" />
-        <argument
-            android:name="nombre"
-            app:argType="string"
-            app:nullable="true" />
     </fragment>
+    <!-- Declaración del segundo fragment del Grafo, con sus action  -->
     <fragment
         android:id="@+id/segundoFragment"
         android:name="com.example.ejemplofragment.SegundoFragment"
         android:label="fragment_segundo"
         tools:layout="@layout/fragment_segundo" >
-        <argument
-            android:name="nombre"
-            app:argType="string"
-            app:nullable="true" />
         <action
             android:id="@+id/action_segundoFragment_to_tercerFragment"
             app:destination="@id/tercerFragment" />
-        <action
-            android:id="@+id/action_segundoFragment_to_tercerFragment2"
-            app:destination="@id/tercerFragment" />
+        <argument
+            android:name="name"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="Guest" />
     </fragment>
+
+    <!-- Declaración del tercer fragment del Grafo, con sus action y argumentos  -->
     <fragment
         android:id="@+id/tercerFragment"
         android:name="com.example.ejemplofragment.TercerFragment"
         android:label="fragment_tercer"
-        tools:layout="@layout/fragment_tercer" />
+        tools:layout="@layout/fragment_tercer" >
+        <argument
+            android:name="provincia"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
 </navigation>
