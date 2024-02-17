@@ -11,11 +11,11 @@
         android:id="@+id/btnFragmentClick"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
+        android:text="IR AL SEGUNDO FRAGMENT"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="CLICK" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView"
@@ -34,6 +34,10 @@
         android:id="@+id/animationView"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:lottie_rawRes="@raw/botonanimado"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"/>

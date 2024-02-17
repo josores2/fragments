@@ -11,7 +11,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/btnFragmentClick3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_height="wrap_content"
@@ -19,5 +19,26 @@
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnFragmentClick3"
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content"
+        android:text="VOLVER AL PRIMER FRAGMENT"
+        />
+
+    <Button
+        android:id="@+id/btnFragmentClick4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VOLVER AL SEGUNDO FRAGMENT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btnFragmentClick3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
